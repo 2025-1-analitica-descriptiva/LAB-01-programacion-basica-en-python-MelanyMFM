@@ -28,7 +28,7 @@ def pregunta_08():
 
     """
     listas = []
-    with open('..\\files\\input\\data.csv', "r", encoding="utf-8") as file:
+    with open('files/input/data.csv', "r", encoding="utf-8") as file:
         for renglon in file:
             linea = list(renglon.strip().split("\t"))
             Pareja = (int(linea[1]), linea[0])

@@ -16,7 +16,7 @@ def pregunta_12():
 
     """
     letras = {}
-    with open('..\\files\\input\\data.csv') as f:
+    with open('files/input/data.csv') as f:
         for line in f:
             letra = line.strip().split('\t')[0]
 

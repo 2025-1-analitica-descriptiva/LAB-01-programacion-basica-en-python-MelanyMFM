@@ -25,7 +25,7 @@ def pregunta_09():
 
     """
     conteo = {}
-    with open('..\\files\\input\\data.csv', "r") as archivo:
+    with open('files/input/data.csv', "r") as archivo:
         for linea in archivo:
             columnas = linea.strip().split("\t")
             codigos = columnas[4].split(",") 

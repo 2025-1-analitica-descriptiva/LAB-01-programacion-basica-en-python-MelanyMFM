@@ -26,7 +26,7 @@ def pregunta_06():
      ('jjj', 5, 17)]
 
     """
-    with open('..\\files\\input\\data.csv', 'r') as f:
+    with open('files/input/data.csv', 'r') as f:
         datos = f.readlines()
 
     count = {}

@@ -26,7 +26,7 @@ def pregunta_04():
      ('12', 3)]
 
     """
-    with open('..\\files\\input\\data.csv', 'r') as file:
+    with open('files/input/data.csv', 'r') as file:
         data = {}
         for line in file:
             date = line.split("\t")[2]

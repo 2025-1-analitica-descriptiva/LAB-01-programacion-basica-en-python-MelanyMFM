@@ -26,7 +26,7 @@ def pregunta_07():
 
     """
     aso = {}
-    with open('..\\files\\input\\data.csv', "r", encoding="utf-8") as file:
+    with open('files/input/data.csv', "r", encoding="utf-8") as file:
         for linea in file:
             partes = linea.strip().split("\t")
             letra = partes[0]
