@@ -16,3 +16,15 @@ def pregunta_11():
 
 
     """
+    di = {}
+
+    with open('..\\files\\input\\data.csv') as f:
+        for line in f:
+            valor = line.strip().split('\t')[1]
+            for letra in line.strip().split('\t')[3].split(','):
+                if letra in di:
+                    di[letra] += int(valor)
+                else:
+                    di[letra] = int(valor)
+
+    return {k: int(v) for k, v in di.items()}

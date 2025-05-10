@@ -25,3 +25,17 @@ def pregunta_07():
      (9, ['A', 'B', 'E', 'A', 'A', 'C'])]
 
     """
+    aso = {}
+    with open('..\\files\\input\\data.csv', "r", encoding="utf-8") as file:
+        for linea in file:
+            partes = linea.strip().split("\t")
+            letra = partes[0]
+            numero = int(partes[1])
+
+            if numero in aso:
+                aso[numero].append(letra)
+            else:
+                aso[numero] = [letra]
+
+    resultado = sorted(aso.items())
+    return resultado
